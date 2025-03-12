@@ -79,7 +79,7 @@ const ZodiacForm = ({ setResult }) => {
     setLoverZodiac(loverSign);
 
     try {
-      const response = await axios.post("http://localhost:3682/api/v1/check-compatibility", {
+      const response = await axios.post("https://api-matchmakergame.onrender.com/api/v1/check-compatibility", {
         userName: formData.userName,
         loverName: formData.loverName,
         userDOB: { day: Number(formData.userDay), month: Number(formData.userMonth) },

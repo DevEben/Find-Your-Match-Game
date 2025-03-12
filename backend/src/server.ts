@@ -41,7 +41,7 @@ app.use(cookieParser());
 
 
 app.get('/', async (req: Request, res: Response): Promise<Response> => {
-    return res.send("Welcome to Match Maker Game API");
+    return res.send("Welcome to Match Maker Game API by DevEben");
 });
 
 
